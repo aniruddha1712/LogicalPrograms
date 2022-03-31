@@ -11,7 +11,7 @@ namespace LogicalPrograms
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to Logical Programs of C#");
-            Console.WriteLine("1:Fibonacci\n2:PerfectNumber\n3:");
+            Console.WriteLine("1:Fibonacci\n2:PerfectNumber\n3:PrimeNumber");
             int option = Convert.ToInt32(Console.ReadLine());
             switch(option)
             {
@@ -20,6 +20,9 @@ namespace LogicalPrograms
                     break;
                 case 2:
                     PerfectNumber.FindPerfectNum();
+                    break;
+                case 3:
+                    PrimeNumber.FindPrimeNum();
                     break;
                 default:
                     Console.WriteLine("Invalid input!");
