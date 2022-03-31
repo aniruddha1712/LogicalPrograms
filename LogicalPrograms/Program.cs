@@ -12,7 +12,7 @@ namespace LogicalPrograms
         {
             Console.WriteLine("Welcome to Logical Programs of C#");
             Console.WriteLine("1:Fibonacci\n2:PerfectNumber\n3:PrimeNumber\n" +
-                "4:ReverseNumber\n5:CouponNumber");
+                "4:ReverseNumber\n5:CouponNumber\n6:StopWatch");
             int option = Convert.ToInt32(Console.ReadLine());
             switch(option)
             {
@@ -30,6 +30,9 @@ namespace LogicalPrograms
                     break;
                 case 5:
                     CouponNumber.FindCoupons();
+                    break;
+                case 6:
+                    StopWatchNew.Timer();
                     break;
                 default:
                     Console.WriteLine("Invalid input!");
