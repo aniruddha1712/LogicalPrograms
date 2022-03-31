@@ -11,7 +11,7 @@ namespace LogicalPrograms
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to Logical Programs of C#");
-            Console.WriteLine("1:Fibonacci\n2:");
+            Console.WriteLine("1:Fibonacci\n2:PerfectNumber\n3:");
             int option = Convert.ToInt32(Console.ReadLine());
             switch(option)
             {
@@ -19,10 +19,12 @@ namespace LogicalPrograms
                     Fibonacci.FindSeries();
                     break;
                 case 2:
+                    PerfectNumber.FindPerfectNum();
+                    break;
+                default:
                     Console.WriteLine("Invalid input!");
                     break;
             }
-            
             Console.ReadLine();
         }
     }
