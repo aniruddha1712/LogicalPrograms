@@ -11,6 +11,18 @@ namespace LogicalPrograms
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to Logical Programs of C#");
+            Console.WriteLine("1:Fibonacci\n2:");
+            int option = Convert.ToInt32(Console.ReadLine());
+            switch(option)
+            {
+                case 1:
+                    Fibonacci.FindSeries();
+                    break;
+                case 2:
+                    Console.WriteLine("Invalid input!");
+                    break;
+            }
+            
             Console.ReadLine();
         }
     }
